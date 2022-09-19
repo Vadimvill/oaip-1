@@ -21,14 +21,12 @@ int main()
 			month_input[i] += 'z' - 'Z';
 	}
 	
-	for (int i = 0; i < 1; ++i)
+	for (int j = 0; j < 12; ++j)
 	{
-		for (int j = 0; j < 12; ++j)
-		{
-			if (strcmp(month_input, month_base[j]) == 0)
-				num_of_the_month = j + 1;
-		}
+	       if (strcmp(month_input, month_base[j]) == 0)
+		       num_of_the_month = j + 1;
 	}
+	
 
 	switch (num_of_the_month)
 	{
