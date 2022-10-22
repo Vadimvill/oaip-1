@@ -1,0 +1,17 @@
+﻿  array.c
+  choice.c
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(10,23): warning C4047: 'function': 'int *' differs in levels of indirection from 'int **'
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(10,16): warning C4024: 'input_result': different types for formal and actual parameter 1
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(11,22): warning C4047: 'function': 'const int' differs in levels of indirection from 'int *'
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(11,16): warning C4024: 'result_check': different types for formal and actual parameter 1
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(42,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+  input.c
+C:\Users\thegw\source\repos\IMBA\IMBA\input.c(11,3): warning C4013: 'gets' undefined; assuming extern returning int
+  main.c
+  memory.c
+  output.c
+  result.c
+C:\Users\thegw\source\repos\IMBA\IMBA\result.c(20,3): warning C4013: 'strcpy' undefined; assuming extern returning int
+  Generating Code...
+C:\Users\thegw\source\repos\IMBA\IMBA\choice.c(33): warning C4715: 'choice_switch': not all control paths return a value
+  IMBA.vcxproj -> C:\Users\thegw\source\repos\IMBA\x64\Debug\IMBA.exe
