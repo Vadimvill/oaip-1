@@ -1,0 +1,3 @@
+﻿  input.c
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(11,3): warning C4013: 'gets' undefined; assuming extern returning int
+  IMBA.vcxproj -> C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\x64\Debug\IMBA.exe
