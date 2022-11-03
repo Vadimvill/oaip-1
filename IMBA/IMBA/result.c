@@ -11,11 +11,11 @@ void result_check(const int result,int* size, int* counter)
 	}
 	else                                                                                          // take the last place
 	{
-		char *temp_name, *temp_last_name;
+		char* temp_name, * temp_last_name;
 		int temp_subgroup;
 
-		memory_allocate(&temp_name);
-		memory_allocate(&temp_last_name);
+		/*memory_allocate(&temp_name);
+		memory_allocate(&temp_last_name);*/
 		
 		strcpy(temp_last_name, students_queue[0].last_name);
 		strcpy(temp_name, students_queue[0].name);
@@ -31,7 +31,7 @@ void result_check(const int result,int* size, int* counter)
 		strcpy(students_queue[*size -1].name, temp_name);
 		students_queue[*size - 1].subgroup = temp_subgroup;
 
-		//FREE
+		free(temp_last_name);
 	}
 }
 

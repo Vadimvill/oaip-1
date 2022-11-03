@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include "arry.h"
 #include "input.h"
-
 #include "output.h"
 
 int main()

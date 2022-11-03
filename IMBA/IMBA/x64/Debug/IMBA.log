@@ -1,3 +1,4 @@
-﻿  input.c
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(11,3): warning C4013: 'gets' undefined; assuming extern returning int
-  IMBA.vcxproj -> C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\x64\Debug\IMBA.exe
+﻿  result.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20,3): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20): error C4700: uninitialized local variable 'temp_last_name' used
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(21): error C4700: uninitialized local variable 'temp_name' used
