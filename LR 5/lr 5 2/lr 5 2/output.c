@@ -9,8 +9,13 @@ void output_arry(const int row, int*** arry)
 		{
 			printf("%d ", (*arry)[i][j]);
 			j++;
+			if ((*arry)[i][j] == 0)
+			{
+				printf("\n");
+			}
 		}
-		printf("\n");
+		
+			
 
 	}
 	
