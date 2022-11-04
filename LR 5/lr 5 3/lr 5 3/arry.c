@@ -41,3 +41,11 @@ void arry_find_cols_with_2_zero(const int i,const int col,int*** arry,int* zero_
 		}
 	}
 }
+
+void arry_free(const int row, int** arry)
+{
+	for (int i = 0; i < row; i++)
+	{
+		free(*(arry + i));
+	}
+}

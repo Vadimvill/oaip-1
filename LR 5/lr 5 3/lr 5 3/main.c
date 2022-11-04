@@ -14,5 +14,6 @@ int main()
 	arry_del_elements(&row, col, &arry);
 	printf("The result is: \n");
 	output_arry(row, col, &arry);
+	arry_free(row, arry);
 
 }

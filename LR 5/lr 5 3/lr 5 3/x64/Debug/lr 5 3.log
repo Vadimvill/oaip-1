@@ -1,2 +1,4 @@
-﻿  output.c
-  lr 5 3.vcxproj -> C:\Users\ASUS\source\repos\lr 5 3\x64\Debug\lr 5 3.exe
+﻿  arry.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\arry.c(5,29): warning C4020: 'malloc': too many actual parameters
+C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\arry.c(29,62): warning C4047: '=': 'int *' differs in levels of indirection from 'int **'
+  lr 5 3.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe
