@@ -16,6 +16,6 @@ int main()
 	arry_delete_max_elements(row,&arry);
 	printf("The result is:\n");
 	output_arry(row,&arry);
-
+	arry_free(row, arry);
 
 }

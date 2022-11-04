@@ -14,8 +14,8 @@ void result_check(const int result,int* size, int* counter)
 		char* temp_name, * temp_last_name;
 		int temp_subgroup;
 
-		/*memory_allocate(&temp_name);
-		memory_allocate(&temp_last_name);*/
+		memory_allocate(&temp_name);
+		memory_allocate(&temp_last_name);
 		
 		strcpy(temp_last_name, students_queue[0].last_name);
 		strcpy(temp_name, students_queue[0].name);

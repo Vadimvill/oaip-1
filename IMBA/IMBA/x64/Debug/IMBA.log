@@ -1,4 +1,6 @@
-﻿  result.c
+﻿  memory.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\memory.c(5,30): warning C4047: '=': 'char *' differs in levels of indirection from 'char **'
+  result.c
 C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20,3): warning C4013: 'strcpy' undefined; assuming extern returning int
-C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20): error C4700: uninitialized local variable 'temp_last_name' used
-C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(21): error C4700: uninitialized local variable 'temp_name' used
+  Generating Code...
+  IMBA.vcxproj -> C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\x64\Debug\IMBA.exe

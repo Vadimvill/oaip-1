@@ -53,3 +53,11 @@ void arry_find_length_of_the_col(const int i,int* col,int*** arry)
     }
     (*col)++;
 }
+
+void arry_free(const int row, int** arry)
+{
+        for (int j = 0; j < row; j++)
+        {
+            free(*(arry + j));
+        }
+}
