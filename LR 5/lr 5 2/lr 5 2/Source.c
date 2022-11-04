@@ -14,8 +14,8 @@ int main()
 	input_arry(row,&arry);
 	output_arry(row,&arry);
 	arry_delete_max_elements(row,&arry);
-	printf("The result is:\n");
+	printf("\nThe result is:\n");
 	output_arry(row,&arry);
 	arry_free(row, arry);
 
-}
+}	

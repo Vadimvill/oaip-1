@@ -1,4 +1,2 @@
-﻿  arry.c
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\arry.c(5,31): warning C4020: 'malloc': too many actual parameters
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\arry.c(57,37): warning C4028: formal parameter 2 different from declaration
+﻿  output.c
   lr 5 2.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe
