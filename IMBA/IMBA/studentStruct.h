@@ -1,9 +1,9 @@
 #pragma once
 
-struct students
+typedef struct 
 {
-	char *name;
-	char *last_name;
+	char* name;
+	char* last_name;
 	int subgroup, result;
 
-}students_queue[50],students_passed[50];
+}students;

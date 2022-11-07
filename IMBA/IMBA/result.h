@@ -6,4 +6,4 @@
 #include"output.h"
 #include"array.h"
 
-void result_check(const int result,int* size, int* counter);
+void result_check(const int result, int* size, int* counter, students** queue, students** passed);

@@ -1,25 +1,27 @@
 ﻿#include "input.h"
 
-void input_initials(int* size)
+void input_initials(int* size, students** queue)
 {
 	for (; (*size) < 50; (*size)++)
 	{
 		rewind(stdin);
 		printf("Entenr the initials of the %d student(If you want to finish the list enter '-' at the name \n", (*size) + 1);
 		printf("Name:\t\t");
-		memory_allocate(&students_queue[*size].name);
-		gets(students_queue[*size].name);
-		if (students_queue[*size].name[0] == '-' && students_queue[*size].name[1] == '\0')              
+		memory_array_allocate(&(*queue)[*size].name);
+		gets((*queue)[*size].name);
+		if ((*queue)[*size].name[0] == '-' && (*queue)[*size].name[1] == '\0')              
 			break;
 		printf("Last Name:\t");
-		memory_allocate(&students_queue[*size].last_name);
-		gets(students_queue[*size].last_name);
+		memory_array_allocate(&(*queue)[*size].last_name);
+		gets((*queue)[*size].last_name);
 		printf("Subgroup:\t");
-		while (scanf_s("%d", &students_queue[*size].subgroup) == 0 || students_queue[*size].subgroup > 2 || students_queue[*size].subgroup <= 0 || getchar() != '\n')
+		while (scanf_s("%d", &(*queue)[*size].subgroup) == 0 || (*queue)[*size].subgroup > 2 || (*queue)[*size].subgroup <= 0 || getchar() != '\n')
 		{
 			printf("Wrong input.\n");
 			rewind(stdin);
 		}
+		memory_struct_reallloc((*size)+2, queue);
+		
 	}
 }
 
@@ -42,7 +44,7 @@ void input_choice(int* choice)
 	}
 }
 
-void input_register_check(char input[])
+void input_register_check(char** input)
 {
 	for (int i = 0; i < 50; i++)
 	{
@@ -50,7 +52,7 @@ void input_register_check(char input[])
 			input[0] -= 'z' - 'Z';
 
 		if (input[i + 1] == '\0')
-			break;
+				break;
 
 		if (input[i+1] >= 'A' && input[i+1] <= 'Z')
 			input[i+1] += 'z' - 'Z';

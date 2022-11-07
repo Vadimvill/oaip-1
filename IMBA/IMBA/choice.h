@@ -8,5 +8,5 @@
 #include"sort.h"
 #include"result.h"
 
-int choice_switch(const int choice, int* size, int* result, int* swap1, int* swap2, int* counter, int* sub_priority);
-void choice_swap(const int swap1, const int swap2);
+int choice_switch(const int choice, int* size, int* result, int* swap1, int* swap2, int* counter, int* sub_priority, students** queue, students** passed);
+void choice_swap(const int swap1, const int swap2, students** queue);
