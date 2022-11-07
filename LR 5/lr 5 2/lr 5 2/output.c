@@ -14,9 +14,5 @@ void output_arry(const int row, int*** arry)
 				printf("\n");
 			}
 		}
-		
-			
-
 	}
-	
 }
