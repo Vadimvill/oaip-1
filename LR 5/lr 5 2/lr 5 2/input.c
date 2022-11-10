@@ -1,8 +1,8 @@
 #include "input.h"
 
-void input_arry_size(int* row)
+void input_array_size(int* row)
 {
-	printf("Enter the arry row \n");
+	printf("Enter the array row \n");
 	while (scanf_s("%d", row) == 0 || *row < 0 || getchar() != '\n')
 	{
 		printf("Wrong input.\n");
@@ -10,14 +10,14 @@ void input_arry_size(int* row)
 	}
 }
 
-void input_arry(const int row,int*** arry)
+void input_array(const int row,int*** array)
 {
 	for (int i = 0; i < row; i++)
 	{ 
 		int j = 0;
-		while (printf("elem[%d][%d] = ",i,j), scanf_s("%d", &(*arry)[i][j]) != 0 && (*arry)[i][j] != 0)
+		while (printf("elem[%d][%d] = ",i,j), scanf_s("%d", &(*array)[i][j]) != 0 && (*array)[i][j] != 0)
 		{
-			(*arry) [i] = (int*)realloc( (*arry)[i], (j + 2) * sizeof(int));
+			(*array) [i] = (int*)realloc( (*array)[i], (j + 2) * sizeof(int));
 			j++;
 		}
 	}

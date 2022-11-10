@@ -1,8 +1,8 @@
 #pragma once
 #include<stdio.h>
 #include<stdlib.h>
-#include"arry.h"
+#include"array.h"
 
 void input_arry_size(int* row);
-void input_arry(const int row, int*** arry);
+void input_array(const int row, int*** array);
 

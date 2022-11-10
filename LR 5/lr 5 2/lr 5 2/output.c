@@ -1,15 +1,15 @@
 #include "output.h"
 
-void output_arry(const int row, int*** arry)
+void output_array(const int row, int*** array)
 {
 	for (int i = 0; i < row ; i++)
 	{
 		int j = 0;
-		while ((*arry)[i][j] != 0)
+		while ((*array)[i][j] != 0)
 		{
-			printf("%d ", (*arry)[i][j]);
+			printf("%d ", (*array)[i][j]);
 			j++;
-			if ((*arry)[i][j] == 0)
+			if ((*array)[i][j] == 0)
 			{
 				printf("\n");
 			}

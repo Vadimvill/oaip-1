@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include "arry.h"
+#include "array.h"
 #include "input.h"
 #include "output.h"
 
 int main()
 {
 	int row;
-	input_arry_size(&row);
-	int** arry;
-	arry_memoey_allocate(row,1,&arry);
-	printf("Enter the elements of arry\n");
-	input_arry(row,&arry);
-	output_arry(row,&arry);
-	arry_delete_max_elements(row,&arry);
+	input_array_size(&row);
+	int** array;
+	array_memoey_allocate(row,1,&array);
+	printf("Enter the elements of array\n");
+	input_array(row,&array);
+	output_array(row,&array);
+	array_delete_max_elements(row,&array);
 	printf("\nThe result is:\n");
-	output_arry(row,&arry);
-	arry_free(row, arry);
+	output_array(row,&array);
+	array_free(row, array);
 
 }	

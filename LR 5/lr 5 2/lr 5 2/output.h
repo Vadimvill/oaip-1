@@ -1,4 +1,4 @@
 #pragma once
 #include<stdio.h>
 
-void output_arry(const int row, int*** arry);
+void output_array(const int row, int*** array);
