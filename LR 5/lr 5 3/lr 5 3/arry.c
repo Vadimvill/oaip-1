@@ -2,7 +2,7 @@
 
 void arry_memoey_allocate(const int row, const int col, int*** arry)
 {
-	*arry = (int**)malloc(row, sizeof(int*));;
+	*arry = (int**)сalloc(row, sizeof(int*));
 	for (int i = 0; i < row; i++)
 	{
 		(*arry)[i] = (int*)calloc(col, sizeof(int));
