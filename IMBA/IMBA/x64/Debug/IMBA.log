@@ -1,3 +1,24 @@
-﻿  result.c
-C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20,3): warning C4013: 'strcpy' undefined; assuming extern returning int
+﻿  choice.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(10,23): warning C4047: 'function': 'int *' differs in levels of indirection from 'int **'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(10,16): warning C4024: 'input_result': different types for formal and actual parameter 1
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(11,22): warning C4047: 'function': 'const int' differs in levels of indirection from 'int *'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(11,16): warning C4024: 'result_check': different types for formal and actual parameter 1
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(27,48): warning C4133: 'function': incompatible types - from 'students **' to 'students **'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(33,48): warning C4133: 'function': incompatible types - from 'students **' to 'students **'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(49,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+  input.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(11,3): warning C4013: 'gets' undefined; assuming extern returning int
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(51,23): warning C4047: '>=': 'char *' differs in levels of indirection from 'int'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(51,41): warning C4047: '<=': 'char *' differs in levels of indirection from 'int'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(57,25): warning C4047: '>=': 'char *' differs in levels of indirection from 'int'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(57,45): warning C4047: '<=': 'char *' differs in levels of indirection from 'int'
+  main.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\main.c(21,46): warning C4133: 'function': incompatible types - from 'students **' to 'students **'
+  output.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\output.c(9,45): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\output.c(9,35): warning C4024: 'input_register_check': different types for formal and actual parameter 1
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\output.c(10,40): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\output.c(10,35): warning C4024: 'input_register_check': different types for formal and actual parameter 1
+  Generating Code...
+C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(39): warning C4715: 'choice_switch': not all control paths return a value
   IMBA.vcxproj -> C:\Users\ASUS\source\repos\GwinBest\oaip\IMBA\x64\Debug\IMBA.exe

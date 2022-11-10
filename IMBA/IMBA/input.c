@@ -2,7 +2,7 @@
 
 void input_initials(int* size, students** queue)
 {
-	for (; (*size) < 50; (*size)++)
+	for (; ; (*size)++)
 	{
 		rewind(stdin);
 		printf("Entenr the initials of the %d student(If you want to finish the list enter '-' at the name \n", (*size) + 1);
