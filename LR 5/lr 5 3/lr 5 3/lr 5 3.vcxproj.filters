@@ -18,13 +18,13 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arry.h">
+    <ClCompile Include="array.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arry.c">
+    <ClCompile Include="array.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="output.c">

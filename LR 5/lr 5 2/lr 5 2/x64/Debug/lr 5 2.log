@@ -1,8 +1,1 @@
-﻿  input.c
-  Source.c
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\Source.c(10,2): warning C4013: 'input_array_size' undefined; assuming extern returning int
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\Source.c(19,23): warning C4047: 'function': 'int ***' differs in levels of indirection from 'int **'
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\Source.c(19,18): warning C4024: 'array_free': different types for formal and actual parameter 2
-  Generating Code...
-  LINK : C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe not found or not built by the last incremental link; performing full link
-  lr 5 2.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe
+﻿  lr 5 2.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe

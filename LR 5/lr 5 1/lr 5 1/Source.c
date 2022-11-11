@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include<stdlib.h>
-#include "arry.h"
+#include "array.h"
 #include "input.h"
 #include "output.h"
 
 int main()
 {
 	int size;
-	input_arry_size(&size);
-	int* arry = (int*)calloc(size,sizeof(int));
-	printf("Enter the elements of arry\n");
-	input_arry(size, &arry);
-	arry_del_elements(&size, &arry);
-	output_arry(size,&arry);
-	free(arry);
+	input_array_size(&size);
+	int* array = (int*)calloc(size,sizeof(int));
+	printf("Enter the elements of array\n");
+	input_array(size, &array);
+	array_del_elements(&size, &array);
+	output_array(size,&array);
+	free(array);
 }

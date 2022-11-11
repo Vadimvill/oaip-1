@@ -1,12 +1,12 @@
 #include "output.h"
 
-void output_arry(const int rows, const int cols, int*** arry)
+void output_array(const int rows, const int cols, int*** array)
 {
 	for (int i = 0; i < rows; i++) 
 	{
 		for (int j = 0; j < cols; j++)
 		{
-			printf("%d ", (*arry)[i][j]);
+			printf("%d ", (*array)[i][j]);
 		}
 				printf("\n");
 	}

@@ -127,13 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="arry.c" />
+    <ClCompile Include="array.c" />
     <ClCompile Include="input.c" />
     <ClCompile Include="output.c" />
     <ClCompile Include="Source.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="arry.h" />
+    <ClInclude Include="array.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="output.h" />
   </ItemGroup>

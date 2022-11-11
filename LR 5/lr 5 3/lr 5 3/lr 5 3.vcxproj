@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="arry.c" />
-    <ClCompile Include="arry.h" />
+    <ClCompile Include="array.c" />
+    <ClCompile Include="array.h" />
     <ClCompile Include="input.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="output.c" />

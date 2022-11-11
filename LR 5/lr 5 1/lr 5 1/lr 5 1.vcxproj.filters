@@ -18,7 +18,7 @@
     <ClCompile Include="Source.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arry.c">
+    <ClCompile Include="array.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="output.c">
@@ -29,7 +29,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="arry.h">
+    <ClInclude Include="array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="input.h">
