@@ -1,12 +1,7 @@
 ﻿  array.c
 C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\array.c(5,30): warning C4020: 'malloc': too many actual parameters
 C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\array.c(29,64): warning C4047: '=': 'int *' differs in levels of indirection from 'int **'
-  output.c
+  main.c
   Generating Code...
-  array.h
-  LINK : C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe not found or not built by the last incremental link; performing full link
 x64\Debug\array.obj : warning LNK4042: object specified more than once; extras ignored
-main.obj : error LNK2019: unresolved external symbol array_memoey_allocate referenced in function main
-main.obj : error LNK2019: unresolved external symbol array_del_elements referenced in function main
-main.obj : error LNK2019: unresolved external symbol array_free referenced in function main
-C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe : fatal error LNK1120: 3 unresolved externals
+  lr 5 3.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe

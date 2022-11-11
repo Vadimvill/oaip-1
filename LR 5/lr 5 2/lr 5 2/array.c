@@ -54,10 +54,11 @@ void array_find_length_of_the_col(const int i,int* col,int*** array)
     (*col)++;
 }
 
-void array_free(const int row, int** array)
+void array_free(const int row, int*** array)
 {
         for (int j = 0; j < row; j++)
         {
             free(*(array + j));
         }
+        
 }

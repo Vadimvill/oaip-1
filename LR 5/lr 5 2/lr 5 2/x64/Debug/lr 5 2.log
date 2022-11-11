@@ -1,1 +1,3 @@
-﻿  lr 5 2.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe
+﻿  array.c
+C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 2\lr 5 2\array.c(5,32): warning C4020: 'malloc': too many actual parameters
+  lr 5 2.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 2\x64\Debug\lr 5 2.exe
