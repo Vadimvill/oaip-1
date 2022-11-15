@@ -2,7 +2,7 @@
 
 void array_memoey_allocate(const int row, const int col,int*** array)
 {
-    *array = (int**)malloc(row,sizeof(int*));;
+    *array = (int**)malloc(row * sizeof(int*));;
     for (int i = 0; i < row; i++)
     {
         (*array)[i] = (int*)calloc(col, sizeof(int));
@@ -60,5 +60,6 @@ void array_free(const int row, int*** array)
         {
             free(*(array + j));
         }
+        free(array);
         
 }
