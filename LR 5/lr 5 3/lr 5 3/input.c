@@ -1,6 +1,6 @@
 #include "input.h"
 
-void input_array_size(int* row,int* col)
+void input_array_size(int* array_size)
 {
 	while (scanf_s("%d", row) == 0 || *row < 0 || getchar() != '\n')
 	{
