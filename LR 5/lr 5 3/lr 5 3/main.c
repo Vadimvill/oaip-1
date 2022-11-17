@@ -7,7 +7,10 @@ int main()
 {
 	int row, col;
 	int** array;
-	input_array_size(&row, &col);
+	printf("Enter the array rows \n");
+	input_array_size(&row);
+	printf("Enter the array cols \n");
+	input_array_size(&col);
 	array_memoey_allocate(row, col, &array);
 	input_array(row, col, &array);
 	output_array(row, col, &array);
