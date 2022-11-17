@@ -2,14 +2,7 @@
 
 void input_array_size(int* row,int* col)
 {
-	printf("Enter the array rows \n");
 	while (scanf_s("%d", row) == 0 || *row < 0 || getchar() != '\n')
-	{
-		printf("Wrong input.\n");
-		rewind(stdin);
-	}
-	printf("Enter the array cols \n");
-	while (scanf_s("%d", col) == 0 || *col < 0 || getchar() != '\n')
 	{
 		printf("Wrong input.\n");
 		rewind(stdin);
