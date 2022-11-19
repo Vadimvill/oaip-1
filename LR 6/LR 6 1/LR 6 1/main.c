@@ -13,8 +13,8 @@ int main()
 	int* array;
 #ifdef DEBUG
 	int* array_debug;
-	array_memoey_allocate(10000, &array_debug);
-	array_memoey_allocate(10000, &array);
+	array_memory_allocate(10000, &array_debug);
+	array_memory_allocate(10000, &array);
 	array_input_debug(10000, &array);
 	array_input_debug(10000, &array_debug);
 	clock_t start_array = clock();
@@ -32,7 +32,7 @@ int main()
 #else
 	int array_size;
 	input_array_size(&array_size);
-	array_memoey_allocate(array_size, &array);
+	array_memory_allocate(array_size, &array);
 	input_array(array_size, &array);
 	output_array(array_size, &array);
 	printf("\nThe result is: \n");
