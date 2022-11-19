@@ -10,7 +10,7 @@ void merge_sort(int*** array, int rows, int cols)
     }
     int count = 1;
     int** array_merge = NULL;
-    array_memoey_allocate(rows, cols, &array_merge);
+    array_memory_allocate(rows, cols, &array_merge);
     int step;
 
    
