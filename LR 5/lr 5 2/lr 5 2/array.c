@@ -1,6 +1,6 @@
 #include "array.h"
 
-void array_memoey_allocate(const int row, const int col,int*** array)
+void array_memory_allocate(const int row, const int col,int*** array)
 {
     *array = (int**)malloc(row * sizeof(int*));
     for (int i = 0; i < row; i++)
