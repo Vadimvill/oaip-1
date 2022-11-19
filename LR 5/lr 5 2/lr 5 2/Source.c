@@ -9,7 +9,7 @@ int main()
 	int row;
 	input_array_size(&row);
 	int** array;
-	array_memoey_allocate(row,1,&array);
+	array_memory_allocate(row,1,&array);
 	printf("Enter the elements of array\n");
 	input_array(row,&array);
 	output_array(row,&array);
