@@ -16,7 +16,7 @@ int main()
 	input_array_size(&row);
 	printf("Enter the array cols \n");
 	input_array_size(&col);
-	array_memoey_allocate(row,col,&array);
+	array_memory_allocate(row,col,&array);
 	input_array(row, col, &array);
 	output_array(row, col, &array);
 	printf("\nThe result is: \n");
