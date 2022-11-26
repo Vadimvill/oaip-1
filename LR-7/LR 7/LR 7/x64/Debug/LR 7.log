@@ -1,0 +1,7 @@
+﻿  task2.c
+C:\Users\ASUS\source\repos\LR 7\LR 7\task2.c(10,10): warning C4473: 'scanf_s' : not enough arguments passed for format string
+C:\Users\ASUS\source\repos\LR 7\LR 7\task2.c(10,10): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\ASUS\source\repos\LR 7\LR 7\task2.c(10,10): message : the missing variadic argument 2 is required by format string '%c'
+C:\Users\ASUS\source\repos\LR 7\LR 7\task2.c(10,10): message : this argument is used as a buffer size
+C:\Users\ASUS\source\repos\LR 7\LR 7\task2.c(18): warning C4716: 'task2': must return a value
+  LR 7.vcxproj -> C:\Users\ASUS\source\repos\LR 7\x64\Debug\LR 7.exe
