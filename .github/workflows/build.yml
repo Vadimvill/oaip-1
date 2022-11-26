@@ -21,7 +21,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v1
       - name: Run build-wrapper
         run: |
-          build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} msbuild LR%206/LR%206%201/LR%206%201\LR%206%201.vcxproj /t:rebuild /nodeReuse:false
+          build-wrapper-win-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} msbuild lq/lr 5.2/lr5-2\lr 5 2.vcxproj /t:rebuild /nodeReuse:false
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
