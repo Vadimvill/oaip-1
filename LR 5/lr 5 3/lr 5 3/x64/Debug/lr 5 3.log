@@ -1,7 +1,1 @@
-﻿  array.c
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\array.c(5,30): warning C4020: 'malloc': too many actual parameters
-C:\Users\ASUS\source\repos\GwinBest\oaip\LR 5\lr 5 3\lr 5 3\array.c(29,64): warning C4047: '=': 'int *' differs in levels of indirection from 'int **'
-  main.c
-  Generating Code...
-x64\Debug\array.obj : warning LNK4042: object specified more than once; extras ignored
-  lr 5 3.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe
+﻿  lr 5 3.vcxproj -> C:\Users\ASUS\Source\Repos\GwinBest\oaip\LR 5\lr 5 3\x64\Debug\lr 5 3.exe

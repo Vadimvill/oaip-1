@@ -2,7 +2,7 @@
 
 void input_array_size(int* array_size)
 {
-	while (scanf_s("%d", row) == 0 || *row < 0 || getchar() != '\n')
+	while (scanf_s("%d", array_size) == 0 || *array_size < 0 || getchar() != '\n')
 	{
 		printf("Wrong input.\n");
 		rewind(stdin);
