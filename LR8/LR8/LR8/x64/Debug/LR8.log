@@ -1,0 +1,9 @@
+﻿  main.c
+C:\Users\ASUS\source\repos\LR8\LR8\main.c(14,29): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Users\ASUS\source\repos\LR8\LR8\main.c(14,26): warning C4024: 'input_string': different types for formal and actual parameter 1
+  sort.c
+C:\Users\ASUS\source\repos\LR8\LR8\sort.c(7,61): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\ASUS\source\repos\LR8\LR8\sort.c(11,4): warning C4013: 'strcpy' undefined; assuming extern returning int
+  str.c
+  Generating Code...
+  LR8.vcxproj -> C:\Users\ASUS\source\repos\LR8\x64\Debug\LR8.exe
