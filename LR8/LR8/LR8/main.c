@@ -17,5 +17,4 @@ int main(int argc, char** argv)
     printf("\nSorted array of strings in ascending order\n");
     output_string(string, argc);
     free(string);
-
 }
