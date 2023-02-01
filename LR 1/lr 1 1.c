@@ -15,6 +15,7 @@ int main()
     printf("Arithmetic average=%.3f\nGeometric average=%.3f", avg_aref, avg_geom);
 
 }
+
 float input_check()
 {
    float a;
