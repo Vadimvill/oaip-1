@@ -8,7 +8,7 @@ void file_init(FILE** file, int argc, char** argv)
 
 		for (int i = 3; i < argc; i++)
 		{
-			fprintf(*file, "%s", argv[i]);
+			fprintf(*file, "%s ", argv[i]);
 		}
 	}
 }

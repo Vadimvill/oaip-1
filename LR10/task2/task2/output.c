@@ -11,4 +11,5 @@ void file_output(FILE* file)
 		buff = fgetc(file);
 	}
 
+
 }
