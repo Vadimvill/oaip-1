@@ -10,6 +10,7 @@ int main(int argc, char** argv)
 	{
 		file_init(&kurinoe, argc, argv);
 		file_output(kurinoe);
+		
 		fclose(kurinoe);
 	}
 	
