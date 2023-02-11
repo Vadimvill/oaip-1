@@ -7,7 +7,7 @@ void file_output(FILE* file)
 	char* buff = (char*)malloc(len_of_file+1);
 	fseek(file, 0, SEEK_SET);
 	fread(buff, len_of_file, 1, file);
-	buff[len_of_file] = '\0';
+	buff[len_of_file-1] = '\0';
 	puts(buff);
 	free(buff);
 }
