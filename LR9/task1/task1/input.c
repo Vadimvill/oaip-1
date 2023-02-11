@@ -2,13 +2,11 @@
 
 void file_init(FILE** file, int argc, char** argv)
 {
-	int j = 0;
-	int i=2;
 	fopen_s(file, argv[1], "wb+");
 
 	for (int i = 2; i < argc; i++)
 	{
-		if (atof(argv[i]) == atoi(argv[i]) && isword(argv[i]))
+		if (atof(argv[i]) == atoi(argv[i]) && is_word(argv[i]))
 		{
 			fwrite(argv[i], strlen(argv[i]), 1, *file);
 			fwrite(" ", 1, 1, *file);
@@ -17,7 +15,7 @@ void file_init(FILE** file, int argc, char** argv)
 
 }
 
-int isword(char* str)
+int is_word(char* str)
 {
 	int i = 0;
 	while (str[i] != '\0')
