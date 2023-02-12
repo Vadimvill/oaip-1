@@ -6,7 +6,7 @@ void file_init(FILE** file, int argc, char** argv)
 
 	for (int i = 2; i < argc; i++)
 	{
-		if (atof(argv[i]) == atoi(argv[i]) && is_word(argv[i]))
+		if (atof(argv[i]) == atoi(argv[i]) && (!is_word(argv[i])))
 		{
 			fwrite(argv[i], strlen(argv[i]), 1, *file);
 			fwrite(" ", 1, 1, *file);
@@ -22,9 +22,9 @@ int is_word(char* str)
 	{
 		if (isalpha(str[i]))
 		{
-			return 0;
+			return 1;
 		}
 		i++;
 	}
-	return 1;
+	return 0;
 }
