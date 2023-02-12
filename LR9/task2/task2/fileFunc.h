@@ -1,5 +1,8 @@
 #pragma once
 #include<stdio.h>
+#include<io.h>
+#include<ctype.h>
+#include<stdlib.h>
 
 void find_first_non_ascending_element(FILE* file);
 void file_read_element(FILE* file, char buff[255]);
