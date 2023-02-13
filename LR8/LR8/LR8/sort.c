@@ -1,6 +1,6 @@
 #include "sort.h"
 
-void insert_sort(char*** string, const int argc)
+void insertion_sort(char*** string, const int argc)
 {
 	for (int i = 2; i < argc; i++)
 	{
