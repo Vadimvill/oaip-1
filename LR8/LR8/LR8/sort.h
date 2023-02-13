@@ -3,4 +3,4 @@
 #include<stdlib.h>
 #include"str.h"
 
-void insert_sort(char*** string, const int argc);
+void insertion_sort(char*** string, const int argc);
