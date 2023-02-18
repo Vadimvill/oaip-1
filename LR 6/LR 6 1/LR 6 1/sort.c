@@ -26,7 +26,7 @@ void shell_sort(const int  array_size, int** array)
 	}
 }
 
-void insert_sort(const int  array_size, int** array)
+void insertion_sort(const int  array_size, int** array)
 {
 	for (int i = 0; i < array_size; i++)
 	{
