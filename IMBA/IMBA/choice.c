@@ -1,36 +1,36 @@
 #include "choice.h"
 
-int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_priority, students* queue, students** passed)
+int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_priority, students** queue, students** passed)
 {
 	switch (choice)
 	{
 	case START_AN_EXEAM:             
-		output_start_an_exam(queue);
+		output_start_an_exam(*queue);
 		int result = input_result();
-		result_check(result, size_of_queue, counter, queue, *passed);
+		result_check(result, size_of_queue, counter, queue, passed);
 		break;
 
 	case SWAP_STUDENTS:                                                         
-		output_students_list(*size_of_queue, queue);
+		output_students_list(*size_of_queue, *queue);
 		printf("Enter 2 student numbers you want to swap:\n ");
-		int first_person = input_swap_number(size_of_queue);
-		int second_person = input_swap_number(size_of_queue);
-		choice_swap_students(first_person, second_person, queue);
+		int first_person = input_swap_number(*size_of_queue);
+		int second_person = input_swap_number(*size_of_queue);
+		choice_swap_students(first_person, second_person, *queue);
 		break;
 
 	case OUTPUT_CURRENT_LIST:                                                         
-		output_students_list(*size_of_queue, queue);
+		output_students_list(*size_of_queue, *queue);
 		break;
 	
 	case ADD_STUDENTS:                                                         
-		input_initials(size_of_queue, &queue);
-		sort_student_list(*size_of_queue, *sub_priority, &queue);
+		input_initials(size_of_queue, queue);
+		sort_student_list(*size_of_queue, *sub_priority, *queue);
 		break;
 
 	case CHANGE_PRIORITY:														    
 		output_priority_subgroup();
 		input_priority_subgroup(sub_priority);
-		sort_student_list(*size_of_queue, *sub_priority, queue);
+		sort_student_list(*size_of_queue, *sub_priority, *queue);
 		break;
 
 	default:

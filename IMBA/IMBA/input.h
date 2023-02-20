@@ -1,6 +1,8 @@
 #pragma once
+
 #include<stdio.h>
 #include<stdlib.h>
+
 #include"output.h"
 #include"choice.h"
 #include"memory.h"

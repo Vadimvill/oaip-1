@@ -22,11 +22,11 @@ int main()
 	{
 		output_choice();
 		input_choice(&choice);
-		choice_switch(choice, &size_of_queue, &counter, &sub_priority, queue, &passed);
+		choice_switch(choice, &size_of_queue, &counter, &sub_priority, &queue, &passed);
 	}
 	output_student_passed(counter, passed);
-	//free(queue);
-	//free(passed);
+	free(queue);
+	free(passed);
 }
 
 

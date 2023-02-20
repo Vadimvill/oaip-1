@@ -20,5 +20,5 @@ enum choice
 	CHANGE_PRIORITY
 };
 
-int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_priority, students* queue, students* passed);
+int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_priority, students** queue, students** passed);
 void choice_swap_students(const int first_person, const int second_person, students* queue);
