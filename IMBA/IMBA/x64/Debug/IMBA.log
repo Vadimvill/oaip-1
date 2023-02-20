@@ -1,14 +1,17 @@
-﻿  array.c
-  choice.c
-  input.c
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\input.c(11,3): warning C4013: 'gets' undefined; assuming extern returning int
-  main.c
-  memory.c
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\memory.c(15,67): warning C4133: '=': incompatible types - from 'students *' to 'students *'
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\memory.c(20,75): warning C4133: '=': incompatible types - from 'students *' to 'students *'
-  result.c
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\result.c(20,3): warning C4013: 'strcpy' undefined; assuming extern returning int
-  sort.c
-  Generating Code...
-C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\choice.c(40): warning C4715: 'choice_switch': not all control paths return a value
+﻿  client.c
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(10,7): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(10,3): warning C4024: 'InternetOpenW': different types for formal and actual parameter 5
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(15,7): warning C4047: 'function': 'INTERNET_PORT' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(15,3): warning C4024: 'InternetConnectW': different types for formal and actual parameter 3
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(19,7): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(19,3): warning C4024: 'InternetConnectW': different types for formal and actual parameter 7
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(20,7): warning C4047: 'function': 'DWORD_PTR' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(20,3): warning C4024: 'InternetConnectW': different types for formal and actual parameter 8
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(32,44): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(32,40): warning C4024: 'HttpSendRequestW': different types for formal and actual parameter 3
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(32,56): warning C4047: 'function': 'DWORD' differs in levels of indirection from 'void *'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(32,52): warning C4024: 'HttpSendRequestW': different types for formal and actual parameter 5
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(36,12): warning C4047: 'return': 'HINTERNET' differs in levels of indirection from 'int'
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(65,13): warning C4098: 'parse_html_code_to_file': 'void' function returning a value
+C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\IMBA\client.c(76,10): warning C4098: 'parse_html_code_to_file': 'void' function returning a value
   IMBA.vcxproj -> C:\Users\thegw\source\repos\GwinBest\oaip\IMBA\x64\Debug\IMBA.exe

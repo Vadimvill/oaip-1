@@ -3,7 +3,7 @@
 HINTERNET web_client()
 {
 	HINTERNET session = InternetOpen(
-		L"Mozilla/5.0",
+		USER_AGENT,
 		INTERNET_OPEN_TYPE_PRECONFIG,
 		NULL,
 		NULL,
@@ -11,7 +11,7 @@ HINTERNET web_client()
 
 	HINTERNET connect = InternetConnect(
 		session,
-		L"www.google.com",
+		HOST,
 		NULL,
 		L"",
 		L"",
@@ -21,8 +21,8 @@ HINTERNET web_client()
 
 	HINTERNET hHttpFile = HttpOpenRequest(
 		connect,
-		L"GET", 
-		L"/",   
+		METHOD,
+		URN,
 		NULL,
 		NULL,
 		NULL,
@@ -33,19 +33,18 @@ HINTERNET web_client()
 	{
 		printf("HttpSendRequest error : (%lu)\n", GetLastError());
 
-		return -1;
+		exit(-1);
 	}
 	
 	return hHttpFile;
 }
 
-
 void load_html_code_to_file(FILE* file, HINTERNET hHttpFile)
 {
-	DWORD buffer_szie = 4096;
+	DWORD buffer_szie = BUFSIZ;
 	char* buffer;
-	buffer = (char*)malloc(buffer_szie + 1);
-
+	buffer = (char*)malloc(buffer_szie + 2);
+	
 	while (TRUE) {
 		DWORD bytes_to_read;
 		BOOL is_read;
@@ -54,7 +53,7 @@ void load_html_code_to_file(FILE* file, HINTERNET hHttpFile)
 			hHttpFile,
 			buffer,
 			buffer_szie + 1,
-			&bytes_to_read + 1);
+			&bytes_to_read);
 
 		if (bytes_to_read == 0) break;
 
@@ -62,15 +61,15 @@ void load_html_code_to_file(FILE* file, HINTERNET hHttpFile)
 		{
 			printf("InternetReadFile error : <%lu>\n", GetLastError());
 
-			return -1;
+			exit(-1);
 		}
 		else
 		{
+			buffer[bytes_to_read] = 0;
 			fputs(buffer,file);
 		}
 	}
 
+	free(buffer);
 	InternetCloseHandle(hHttpFile);
-
-	return 0;
 }
