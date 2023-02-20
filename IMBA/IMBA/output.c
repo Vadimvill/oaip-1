@@ -39,3 +39,19 @@ void output_student_passed(const int counter, students* passed)
 	}
 }
 
+void register_to_upper(char* input)
+{
+	for (int i = 0; i < strlen(input); i++)
+	{
+		if (input[0] >= 'a' && input[0] <= 'z')
+			input[0] -= 'z' - 'Z';
+
+		if (input[i + 1] == '\0')
+			break;
+
+		if (input[i + 1] >= 'A' && input[i + 1] <= 'Z')
+			input[i + 1] += 'z' - 'Z';
+
+	}
+}
+

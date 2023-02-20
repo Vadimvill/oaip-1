@@ -44,8 +44,8 @@ void choice_swap_students(const int first_person, const int second_person, stude
 	char* temp_name, * temp_last_name;
 	int temp_subgroup;
 
-	memory_array_allocate(&temp_name);
-	memory_array_allocate(&temp_last_name);
+	memory_string_allocate(&temp_name);
+	memory_string_allocate(&temp_last_name);
 
 	strcpy(temp_last_name, queue[first_person - 1].last_name);
 	strcpy(temp_name, queue[first_person - 1].name);

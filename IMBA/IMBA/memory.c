@@ -1,8 +1,8 @@
 #include "memory.h"
 
-void memory_array_allocate(char** arr)
+void memory_string_allocate(char** string)
 { 
-	*arr  = (char*)malloc(1024);
+	*string  = (char*)malloc(1024);
 }
 
 void memory_delete(char* arr[])

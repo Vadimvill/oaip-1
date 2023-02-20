@@ -14,8 +14,8 @@ void queue_shift(int* size, students** queue)
 
 void passed_students_add_person(const int counter, const int result, students** queue, students** passed)
 {
-	memory_array_allocate(&(*passed)[counter].name);
-	memory_array_allocate(&(*passed)[counter].last_name);
+	memory_string_allocate(&(*passed)[counter].name);
+	memory_string_allocate(&(*passed)[counter].last_name);
 	(*passed)[counter].last_name = (*queue)[0].last_name;
 	(*passed)[counter].name = (*queue)[0].name;
 	(*passed)[counter].subgroup = (*queue)[0].subgroup;

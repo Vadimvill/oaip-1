@@ -7,12 +7,12 @@ void input_initials(int* size, students** queue)
 		rewind(stdin);
 		printf("Entenr the initials of the %d student(If you want to finish the list enter '-' at the name \n", (*size) + 1);
 		printf("Name:\t\t");
-		memory_array_allocate(&(*queue)[*size].name);
+		memory_string_allocate(&(*queue)[*size].name);
 		gets((*queue)[*size].name);
 		if ((*queue)[*size].name[0] == '-' && (*queue)[*size].name[1] == '\0')              
 			break;
 		printf("Last Name:\t");
-		memory_array_allocate(&(*queue)[*size].last_name);
+		memory_string_allocate(&(*queue)[*size].last_name);
 		gets((*queue)[*size].last_name);
 		printf("Subgroup:\t");
 		while (scanf_s("%d", &(*queue)[*size].subgroup) == 0 || (*queue)[*size].subgroup > 2 || (*queue)[*size].subgroup <= 0 || getchar() != '\n')
@@ -41,22 +41,6 @@ void input_choice(int* choice)
 	{
 		printf("Wrong input.\n");
 		rewind(stdin);
-	}
-}
-
-void register_to_upper(char* input)
-{
-	for (int i = 0; i < strlen(input); i++)
-	{
-		if (input[0] >= 'a' && input[0] <= 'z')
-			input[0] -= 'z' - 'Z';
-
-		if (input[i + 1] == '\0')
-				break;
-
-		if (input[i+1] >= 'A' && input[i+1] <= 'Z')
-			input[i+1] += 'z' - 'Z';
-
 	}
 }
 
