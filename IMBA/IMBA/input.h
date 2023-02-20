@@ -4,11 +4,12 @@
 #include"output.h"
 #include"choice.h"
 #include"memory.h"
+#include<string.h>
 #include"studentStruct.h"
 
 void input_initials(int* size, students** queue);
 void input_priority_subgroup(int* sub_priority);
 void input_choice(int* choice);
-void input_result(int* result);
-void input_swap(int* swap1, int* swap2, const int size);
-void input_register_check(char** input);
+int input_result();
+int input_swap_number(const int size);
+void register_to_upper(char* input);

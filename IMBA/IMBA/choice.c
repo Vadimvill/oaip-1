@@ -1,36 +1,37 @@
 #include "choice.h"
 
-
-int choice_switch(const int choice, int* size, int* result, int* swap1, int* swap2, int* counter, int* sub_priority, students** queue, students** passed)
+int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_priority, students* queue, students** passed)
 {
 	switch (choice)
 	{
-	case 1:                                                         //start
-		output_start(queue);
-		input_result(&result);
-		result_check(result, size, counter, queue, passed);
+	case START_AN_EXEAM:             
+		output_start_an_exam(queue);
+		int result = input_result();
+		result_check(result, size_of_queue, counter, queue, *passed);
 		break;
 
-	case 2:                                                         //swap
-		output_students_list(*size, queue);
+	case SWAP_STUDENTS:                                                         
+		output_students_list(*size_of_queue, queue);
 		printf("Enter 2 student numbers you want to swap:\n ");
-		input_swap(swap1, swap2, *size);
-		choice_swap(*swap1, *swap2, queue);
+		int first_person = input_swap_number(size_of_queue);
+		int second_person = input_swap_number(size_of_queue);
+		choice_swap_students(first_person, second_person, queue);
 		break;
 
-	case 3:                                                         //current list
-		output_students_list(*size, queue);
+	case OUTPUT_CURRENT_LIST:                                                         
+		output_students_list(*size_of_queue, queue);
+		break;
+	
+	case ADD_STUDENTS:                                                         
+		input_initials(size_of_queue, &queue);
+		sort_student_list(*size_of_queue, *sub_priority, &queue);
 		break;
 
-	case 4:                                                         //add 
-		input_initials(size, queue);
-		sort_student_list(*size, *sub_priority, queue);
-		break;
-
-	case 5:														    //change priority
+	case CHANGE_PRIORITY:														    
 		output_priority_subgroup();
 		input_priority_subgroup(sub_priority);
-		sort_student_list(*size, *sub_priority, queue);
+		sort_student_list(*size_of_queue, *sub_priority, queue);
+		break;
 
 	default:
 		return 0;
@@ -38,7 +39,7 @@ int choice_switch(const int choice, int* size, int* result, int* swap1, int* swa
 	}
 }
 
-void choice_swap(const int swap1,const int swap2, students** queue)
+void choice_swap_students(const int first_person, const int second_person, students* queue)
 {
 	char* temp_name, * temp_last_name;
 	int temp_subgroup;
@@ -46,17 +47,17 @@ void choice_swap(const int swap1,const int swap2, students** queue)
 	memory_array_allocate(&temp_name);
 	memory_array_allocate(&temp_last_name);
 
-	strcpy(temp_last_name, (*queue)[swap1 - 1].last_name);
-	strcpy(temp_name, (*queue)[swap1 - 1].name);
-	temp_subgroup = (*queue)[swap1 - 1].subgroup;
+	strcpy(temp_last_name, queue[first_person - 1].last_name);
+	strcpy(temp_name, queue[first_person - 1].name);
+	temp_subgroup = queue[first_person - 1].subgroup;
 
-	strcpy((*queue)[swap1 - 1].last_name, (*queue)[swap2 - 1].last_name);
-	strcpy((*queue)[swap1 - 1].name, (*queue)[swap2 - 1].name);
-	(*queue)[swap1 - 1].subgroup = (*queue)[swap2 - 1].subgroup;
+	strcpy(queue[first_person - 1].last_name, queue[second_person - 1].last_name);
+	strcpy(queue[first_person - 1].name, queue[second_person - 1].name);
+	queue[first_person - 1].subgroup = queue[second_person - 1].subgroup;
 
-	strcpy((*queue)[swap2 - 1].last_name, temp_last_name);
-	strcpy((*queue)[swap2 - 1].name, temp_name);
-	(*queue)[swap2 - 1].subgroup = temp_subgroup;
+	strcpy(queue[second_person - 1].last_name, temp_last_name);
+	strcpy(queue[second_person - 1].name, temp_name);
+	queue[second_person - 1].subgroup = temp_subgroup;
 
 	free(temp_last_name);
 	free(temp_name);

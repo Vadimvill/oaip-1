@@ -44,9 +44,9 @@ void input_choice(int* choice)
 	}
 }
 
-void input_register_check(char** input)
+void register_to_upper(char* input)
 {
-	for (int i = 0; i < 50; i++)
+	for (int i = 0; i < strlen(input); i++)
 	{
 		if (input[0] >= 'a' && input[0] <= 'z')
 			input[0] -= 'z' - 'Z';
@@ -60,29 +60,30 @@ void input_register_check(char** input)
 	}
 }
 
-void input_result(int* result)
+int input_result()
 {
+	int result;
 	rewind(stdin);
-	while (scanf_s("\n%d", result) == 0 || (*result) > 10 || (*result) < 0 || getchar() != '\n')
+	while (scanf_s("\n%d", &result) == 0 || result > 10 || result < 0 || getchar() != '\n')
 	{
 		printf("Wrong input.\n");
 		rewind(stdin);
 	}
+
+	return result;
 }
 
-void input_swap(int* swap1, int* swap2,const int size)
+int input_swap_number(const int size)
 {
+	int swap_number;
 	rewind(stdin);
-	while (scanf_s("%d", swap1) == 0 || (*swap1) > size || getchar() != '\n')
+	while (scanf_s("%d", &swap_number) == 0 || swap_number > size || getchar() != '\n')
 	{
 		printf("Wrong input.\n");
 		rewind(stdin);
 	}
-	while (scanf_s("%d", swap2) == 0 || (*swap2) > size || getchar() != '\n')
-	{
-		printf("Wrong input.\n");
-		rewind(stdin);
-	}
+
+	return swap_number;
 }
 
 

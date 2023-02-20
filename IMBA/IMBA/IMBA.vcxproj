@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="array.c" />
     <ClCompile Include="choice.c" />
+    <ClCompile Include="client.c" />
     <ClCompile Include="input.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="memory.c" />
@@ -139,6 +140,7 @@
   <ItemGroup>
     <ClInclude Include="array.h" />
     <ClInclude Include="choice.h" />
+    <ClInclude Include="client.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="memory.h" />
     <ClInclude Include="result.h" />

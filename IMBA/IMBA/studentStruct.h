@@ -6,4 +6,4 @@ typedef struct
 	char* last_name;
 	int subgroup, result;
 
-}students;
+} students;
