@@ -1,5 +1,6 @@
 #include"client.h"
 
+
 HINTERNET web_client()
 {
 	HINTERNET session = InternetOpen(
@@ -26,8 +27,8 @@ HINTERNET web_client()
 		NULL,
 		NULL,
 		NULL,
-		0,
-		0);
+		NULL,
+		NULL);
 
 	if (!HttpSendRequest(hHttpFile, NULL, NULL, NULL, NULL))
 	{

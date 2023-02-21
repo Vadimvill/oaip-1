@@ -1,4 +1,4 @@
-﻿#include "input.h"
+#include "input.h"
 
 void input_initials(int* size, students** queue)
 {
@@ -14,6 +14,9 @@ void input_initials(int* size, students** queue)
 		printf("Last Name:\t");
 		memory_string_allocate(&(*queue)[*size].last_name);
 		gets((*queue)[*size].last_name);
+		printf("Surname:\t");
+		memory_string_allocate(&(*queue)[*size].surname);
+		gets((*queue)[*size].surname);
 		printf("Subgroup:\t");
 		while (scanf_s("%d", &(*queue)[*size].subgroup) == 0 || (*queue)[*size].subgroup > 2 || (*queue)[*size].subgroup <= 0 || getchar() != '\n')
 		{

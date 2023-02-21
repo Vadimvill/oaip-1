@@ -4,6 +4,8 @@ typedef struct
 {
 	char* name;
 	char* last_name;
-	int subgroup, result;
+	char* surname;
+	int subgroup;
+	int result;
 
 } students;

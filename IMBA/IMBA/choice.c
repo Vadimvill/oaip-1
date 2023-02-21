@@ -41,26 +41,31 @@ int choice_switch(const int choice, int* size_of_queue, int* counter, int* sub_p
 
 void choice_swap_students(const int first_person, const int second_person, students* queue)
 {
-	char* temp_name, * temp_last_name;
-	int temp_subgroup;
+	char* temp_name, * temp_last_name, *temp_surname;
+	int temp_subgroup = 1;
 
 	memory_string_allocate(&temp_name);
 	memory_string_allocate(&temp_last_name);
+	memory_string_allocate(&temp_surname);
 
 	strcpy(temp_last_name, queue[first_person - 1].last_name);
 	strcpy(temp_name, queue[first_person - 1].name);
+	strcpy(temp_surname, queue[first_person - 1].surname);
 	temp_subgroup = queue[first_person - 1].subgroup;
-
+	
 	strcpy(queue[first_person - 1].last_name, queue[second_person - 1].last_name);
 	strcpy(queue[first_person - 1].name, queue[second_person - 1].name);
+	strcpy(queue[first_person - 1].surname, queue[second_person - 1].surname);
 	queue[first_person - 1].subgroup = queue[second_person - 1].subgroup;
 
 	strcpy(queue[second_person - 1].last_name, temp_last_name);
 	strcpy(queue[second_person - 1].name, temp_name);
+	strcpy(queue[second_person - 1].surname, temp_surname);
 	queue[second_person - 1].subgroup = temp_subgroup;
 
 	free(temp_last_name);
 	free(temp_name);
+	free(temp_surname);
 }
 
 

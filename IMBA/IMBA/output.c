@@ -8,7 +8,8 @@ void output_students_list(const int size, students* queue)
 	{
 		register_to_upper(queue[i].last_name);
 		register_to_upper(queue[i].name);
-		printf_s("%d. %s  %s\n", i+1, queue[i].last_name, queue[i].name);
+		register_to_upper(queue[i].surname);
+		printf_s("%d. %s  %s  %s\n", i + 1, queue[i].last_name, queue[i].name, queue[i].surname);
 	}
 	printf("=====================================================\n");
 }
@@ -25,7 +26,7 @@ void output_choice()
 
 void output_start_an_exam(students* queue)
 {
-	printf("\nNow it's time to take the exam %s %s\n", queue[0].last_name, queue[0].name);
+	printf("\nNow it's time to take the exam %s %s %s\n", queue[0].last_name, queue[0].name, queue[0].surname);
 	printf("Print a mark,if 3 or lower - retake\n");
 	printf("Result: ");
 }
@@ -35,7 +36,7 @@ void output_student_passed(const int counter, students* passed)
 	printf("The result is:\n");
 	for (int i = 0; i < counter; i++)
 	{
-		printf("%d. %s  %s - %d\n", i + 1, passed[i].last_name, passed[i].last_name, passed[i].result);
+		printf("%d. %s  %s  %s - %d\n", i + 1, passed[i].last_name, passed[i].name, passed[i].surname, passed[i].result);
 	}
 }
 

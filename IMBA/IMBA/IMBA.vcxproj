@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -134,15 +134,18 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="memory.c" />
     <ClCompile Include="output.c" />
+    <ClCompile Include="parse.c" />
     <ClCompile Include="result.c" />
     <ClCompile Include="sort.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array.h" />
+    <ClInclude Include="bool.h" />
     <ClInclude Include="choice.h" />
     <ClInclude Include="client.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="memory.h" />
+    <ClInclude Include="parse.h" />
     <ClInclude Include="result.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="studentStruct.h" />
