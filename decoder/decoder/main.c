@@ -11,6 +11,6 @@ int main()
 	a[4] = 'j';
 	a[5] = '\0';
 	
-	encode_or_decode_string_by_gronsfeld(a, 956,DECODE_WITH_KEY);
+	gronsfeld(a, 0,DECODE_WITH_KEY);
 	return 0;
 }

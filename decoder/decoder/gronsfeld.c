@@ -2,6 +2,7 @@
 
 char* alphabet_eng = ALPHABET_ENG;
 
+
 void gronsfeld(char* string_to_encode, int key,int mode)
 {
 	int i = 0;
